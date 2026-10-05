@@ -51,7 +51,7 @@ export function About() {
             viewport={{ once: true }}
           >
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              AI & ML-focused Computer Science undergraduate at Sreyas Institute of Engineering and Technology, Hyderabad (CGPA: 8.51, Expected Graduation: 2027). Seeking hands-on industry experience to apply technical knowledge and contribute to real-world projects.
+              AI & ML-focused Computer Science undergraduate at Sreyas Institute of Engineering and Technology, Hyderabad (CGPA: 8.64, Expected Graduation: 2027). Seeking hands-on industry experience to apply technical knowledge and contribute to real-world projects.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
               My passion lies in building intelligent real-world applications involving surveillance AI, healthcare AI, and language technologies. I have published research in the International Journal of Science and Technology and built multiple AI/ML projects spanning computer vision, NLP, and edge deployment.
