@@ -17,7 +17,7 @@ const experience = [
   },
   {
     title: "B.Tech CSE (AI & ML)",
-    description: "Sreyas Institute of Engineering and Technology | CGPA: 8.51",
+    description: "Sreyas Institute of Engineering and Technology | CGPA: 8.64",
     icon: GraduationCap,
   },
 ]
