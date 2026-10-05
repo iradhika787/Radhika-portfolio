@@ -17,7 +17,7 @@ const skillCategories = [
   },
   {
     title: "Tools & Platforms",
-    skills: ["VS Code", "GitHub", "Jupyter Notebook", "Streamlit"],
+    skills: ["VS Code", "GitHub", "Streamlit"],
   },
 ]
 
