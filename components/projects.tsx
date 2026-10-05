@@ -1,15 +1,16 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ExternalLink, Github, Eye, MessageSquare, Heart, Scale } from "lucide-react"
+import { Github, Eye, MessageSquare, Heart, Scale, Bot } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const projects = [
   {
     title: "Edge AI Violence Detection System",
     description:
-      "Built a real-time surveillance AI system using PyTorch, YOLOv8, OpenCV and 3D CNN architectures for violence detection in video streams.",
-    tags: ["PyTorch", "YOLOv8", "OpenCV", "3D CNN", "Edge AI"],
+      "Benchmarked three 3D CNN architectures (R3D-18, MC3-18, R(2+1)D-18) on the RWF-2000 dataset; MC3-18 achieved 81% recall and was selected for edge deployment. Integrated YOLOv8 person detection, temporal smoothing and optical-flow analysis to reduce false positives, with SQLite alert logging.",
+    tags: ["PyTorch", "YOLOv8", "OpenCV", "3D CNN", "SQLite", "Edge AI"],
+    github: "https://github.com/iradhika787/3D_CNN-s-in-Violence-Detection",
     icon: Eye,
     gradient: "from-primary/20 to-primary/5",
   },
@@ -18,6 +19,7 @@ const projects = [
     description:
       "Built a Streamlit-based NLP sentiment analysis application using TF-IDF and Logistic Regression for real-time text classification.",
     tags: ["Streamlit", "NLP", "TF-IDF", "Logistic Regression", "Python"],
+    github: "https://github.com/iradhika787",
     icon: MessageSquare,
     gradient: "from-chart-2/20 to-chart-2/5",
   },
@@ -26,6 +28,7 @@ const projects = [
     description:
       "Designed an AI healthcare chatbot with NLP, multilingual support, speech recognition and text-to-speech capabilities.",
     tags: ["NLP", "Speech Recognition", "TTS", "Healthcare AI", "Multilingual"],
+    github: "https://github.com/iradhika787/MediBOT-Project",
     icon: Heart,
     gradient: "from-chart-3/20 to-chart-3/5",
   },
@@ -34,8 +37,18 @@ const projects = [
     description:
       "Developed a web-based AI platform for simplified legal rights awareness using natural language processing.",
     tags: ["AI", "NLP", "Web Development", "Legal Tech"],
+    github: "https://github.com/iradhika787",
     icon: Scale,
     gradient: "from-chart-4/20 to-chart-4/5",
+  },
+  {
+    title: "Agentic Python 2 to Python 3 Code Migration Framework",
+    description:
+      "Developed an agentic framework that detects Python 2 compatibility issues through static analysis and automates conversion using rule-based transformations. Built an Analyze → Migrate → Verify → Retry pipeline that validates code via syntax, compilation, execution and optional tests, with Ollama-based LLM correction for unresolved issues.",
+    tags: ["Python", "Ollama (LLM)", "AST", "Streamlit", "Agentic AI"],
+    github: "https://github.com/iradhika787/Agentic-Code-Migration-Framework",
+    icon: Bot,
+    gradient: "from-primary/20 to-primary/5",
   },
 ]
 
@@ -78,20 +91,13 @@ export function Projects() {
                   </div>
                   <div className="flex gap-3">
                     <a
-                      href="https://github.com"
+                      href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-muted-foreground hover:text-primary transition-colors duration-300"
                       aria-label={`View ${project.title} on GitHub`}
                     >
                       <Github className="w-5 h-5" />
-                    </a>
-                    <a
-                      href="#"
-                      className="text-muted-foreground hover:text-primary transition-colors duration-300"
-                      aria-label={`View ${project.title} live demo`}
-                    >
-                      <ExternalLink className="w-5 h-5" />
                     </a>
                   </div>
                 </div>
