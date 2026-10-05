@@ -14,7 +14,7 @@ const projects = [
     icon: Eye,
     gradient: "from-primary/20 to-primary/5",
   },
-    {
+  {
     title: "Agentic Python 2 to Python 3 Code Migration Framework",
     description:
       "Developed an agentic framework that detects Python 2 compatibility issues through static analysis and automates conversion using rule-based transformations. Built an Analyze → Migrate → Verify → Retry pipeline that validates code via syntax, compilation, execution and optional tests, with Ollama-based LLM correction for unresolved issues.",
@@ -50,7 +50,6 @@ const projects = [
     icon: Scale,
     gradient: "from-chart-4/20 to-chart-4/5",
   },
-
 ]
 
 export function Projects() {
